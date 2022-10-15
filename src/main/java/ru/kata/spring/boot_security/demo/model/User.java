@@ -30,7 +30,6 @@ public class User implements UserDetails {
     @Column(length = 112)
     private String password;
 
-
     @ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinTable(
             name = "users_roles",
@@ -147,4 +146,5 @@ public class User implements UserDetails {
     public int hashCode() {
         return Objects.hash(id, name, surname, email, password, roles);
     }
+
 }
