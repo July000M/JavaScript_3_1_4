@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="icon" href="javascript.png" type="image/x-icon"/>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+          crossorigin="anonymous"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <p class="text-white bg-dark">
+        <span id="userLogin"> </span>
+      <p/>
+    </div>
+    <ul class="nav justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="/logout">Logout</a>
+      </li>
+    </ul>
+    <!--            <a class="btn btn-primary" href="/logout" role="button">logout</a>-->
+  </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-white sidebar collapse">
+      <div class="sidebar-sticky pt-3">
+        <ul class="nav flex-column nav-pills ">
+          <li class="nav-item">
+            <a class="nav-link active">
+              User
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4 bg-light text-dark">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 ">
+        <h1 class="h2">User information page</h1>
+      </div>
+      <table class="table table-responsive-lg border">
+        <thead>
+        <tr>
+          <th scope="col">About User</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="bg-white">
+          <td>
+            <div class="table-responsive">
+              <table class="table table-striped bg-white table-lg">
+                <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Name</th>
+                  <th>Surname</th>
+                  <th>Email</th>
+                  <th>Role</th>
+                </tr>
+                </thead>
+                <tbody id="show">
+                <tr>
+                  <td><label id="id"/></td>
+                  <td><label id="name"/></td>
+                  <td><label id="surname"/></td>
+                  <td><label id="email"/></td>
+                  <td><label id="roles"/></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+</div>
+<script src="/main_user.js"></script>
+</body>
+</html>
