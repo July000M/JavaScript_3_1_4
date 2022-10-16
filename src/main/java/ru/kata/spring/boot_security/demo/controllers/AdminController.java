@@ -39,9 +39,8 @@ public class AdminController {
     }
 
     @DeleteMapping("/{id}")
-    public String deleteUser(@PathVariable int id) {
+    public void deleteUser(@PathVariable int id) {
         userService.deleteUser(id);
-        return "User with ID = " + id + " was deleted";
     }
 
 }

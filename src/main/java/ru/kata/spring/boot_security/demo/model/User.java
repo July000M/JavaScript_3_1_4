@@ -18,10 +18,10 @@ public class User implements UserDetails {
     @Column(length = 120)
     private int id;
 
-    @Column(length = 120)
+    @Column(length = 30)
     private String name;
 
-    @Column(length = 120)
+    @Column(length = 30)
     private String surname;
 
     @Column(length = 120)
@@ -85,6 +85,7 @@ public class User implements UserDetails {
     public String toString() {
         return this.email;
     }
+
     public int getId() {
         return id;
     }
