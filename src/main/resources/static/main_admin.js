@@ -201,6 +201,7 @@ editForm.addEventListener('submit', (e) => {
                     </tr>`
                 }
             )
+
     }
 
 })
